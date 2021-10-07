@@ -8,12 +8,12 @@
 import Foundation
 
 protocol QuotesService {
-    func fetch() async throws -> [Quote]
+    func fetchRandomQuotes() async throws -> [Quote]
 }
 
 final class QuotesServiceImplementation: QuotesService {
     
-    final func fetch() async throws -> [Quote] {
+    final func fetchRandomQuotes() async throws -> [Quote] {
         
         // Start a URL session to interact with the API
         let urlSession = URLSession.shared
