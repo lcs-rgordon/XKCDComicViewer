@@ -16,13 +16,24 @@ struct QuotesScreen: View {
     
     var body: some View {
         
-        List {
+        Group {
             
-            // Display the list of quotes
-            ForEach(vm.quotes, id: \.anime) { item in
-                
-                QuoteView(item: item)
-                
+            if vm.quotes.isEmpty {
+                VStack(spacing: 8) {
+                    ProgressView()
+                    Text("Fetching quotes")
+                }
+            } else {
+                List {
+                    
+                    // Display the list of quotes
+                    ForEach(vm.quotes, id: \.anime) { item in
+                        
+                        QuoteView(item: item)
+                        
+                    }
+                    
+                }
             }
             
         }
