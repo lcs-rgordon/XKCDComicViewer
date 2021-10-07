@@ -17,6 +17,7 @@
 		0EECE661270F090C00E7E8D1 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE660270F090C00E7E8D1 /* QuoteView.swift */; };
 		0EECE664270F0A8F00E7E8D1 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE663270F0A8F00E7E8D1 /* QuotesService.swift */; };
 		0EECE667270F0C6C00E7E8D1 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE666270F0C6C00E7E8D1 /* QuotesViewModel.swift */; };
+		0EECE66C270F1DBF00E7E8D1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE66B270F1DBF00E7E8D1 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		0EECE660270F090C00E7E8D1 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		0EECE663270F0A8F00E7E8D1 /* QuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesService.swift; sourceTree = "<group>"; };
 		0EECE666270F0C6C00E7E8D1 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		0EECE66B270F1DBF00E7E8D1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,8 @@
 		0EECE645270F051D00E7E8D1 /* SwiftUI Starter */ = {
 			isa = PBXGroup;
 			children = (
+				0EECE668270F1D9200E7E8D1 /* Base */,
 				0EECE657270F057900E7E8D1 /* Feature */,
-				0EECE654270F052B00E7E8D1 /* APIConstants */,
 				0EECE646270F051D00E7E8D1 /* SwiftUI_StarterApp.swift */,
 				0EECE648270F051D00E7E8D1 /* ContentView.swift */,
 				0EECE64A270F051F00E7E8D1 /* Assets.xcassets */,
@@ -149,6 +151,31 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		0EECE668270F1D9200E7E8D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0EECE654270F052B00E7E8D1 /* APIConstants */,
+				0EECE669270F1D9800E7E8D1 /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0EECE669270F1D9800E7E8D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EECE66A270F1DB600E7E8D1 /* Loading */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EECE66A270F1DB600E7E8D1 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				0EECE66B270F1DBF00E7E8D1 /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +254,7 @@
 				0EECE667270F0C6C00E7E8D1 /* QuotesViewModel.swift in Sources */,
 				0EECE656270F054200E7E8D1 /* APIConstants.swift in Sources */,
 				0EECE65E270F06A100E7E8D1 /* QuotesScreen.swift in Sources */,
+				0EECE66C270F1DBF00E7E8D1 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

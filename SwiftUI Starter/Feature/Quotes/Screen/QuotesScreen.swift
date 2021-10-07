@@ -19,10 +19,7 @@ struct QuotesScreen: View {
         Group {
             
             if vm.quotes.isEmpty {
-                VStack(spacing: 8) {
-                    ProgressView()
-                    Text("Fetching quotes")
-                }
+                LoadingView(text: "Fetching quotes")
             } else {
                 List {
                     
