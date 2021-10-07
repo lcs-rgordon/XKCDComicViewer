@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct QuotesScreen: View {
+    
+    // Source of truth for the view model – initial instance
+    @StateObject private var vm = QuotesViewModelImplementation(
+        service: QuotesServiceImplementation()
+    )
+    
     var body: some View {
         
         List {
             
             // Display the list of quotes
-            ForEach(Quote.dummyData, id: \.anime) { item in
+            ForEach(vm.quotes, id: \.anime) { item in
                 
                 QuoteView(item: item)
                 
             }
             
+        }
+        .task {
+            // Wait for the quotes to be retrieved from the API
+            await vm.getRandomQuotes()
         }
         
     }
