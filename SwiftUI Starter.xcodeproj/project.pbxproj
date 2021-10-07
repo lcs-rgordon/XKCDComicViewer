@@ -12,6 +12,7 @@
 		0EECE64B270F051F00E7E8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECE64A270F051F00E7E8D1 /* Assets.xcassets */; };
 		0EECE64E270F051F00E7E8D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECE64D270F051F00E7E8D1 /* Preview Assets.xcassets */; };
 		0EECE656270F054200E7E8D1 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE655270F054200E7E8D1 /* APIConstants.swift */; };
+		0EECE65B270F059100E7E8D1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE65A270F059100E7E8D1 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0EECE64A270F051F00E7E8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EECE64D270F051F00E7E8D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EECE655270F054200E7E8D1 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		0EECE65A270F059100E7E8D1 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		0EECE645270F051D00E7E8D1 /* SwiftUI Starter */ = {
 			isa = PBXGroup;
 			children = (
+				0EECE657270F057900E7E8D1 /* Feature */,
 				0EECE654270F052B00E7E8D1 /* APIConstants */,
 				0EECE646270F051D00E7E8D1 /* SwiftUI_StarterApp.swift */,
 				0EECE648270F051D00E7E8D1 /* ContentView.swift */,
@@ -76,6 +79,30 @@
 				0EECE655270F054200E7E8D1 /* APIConstants.swift */,
 			);
 			path = APIConstants;
+			sourceTree = "<group>";
+		};
+		0EECE657270F057900E7E8D1 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				0EECE658270F058200E7E8D1 /* Quotes */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		0EECE658270F058200E7E8D1 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				0EECE659270F058800E7E8D1 /* Model */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		0EECE659270F058800E7E8D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EECE65A270F059100E7E8D1 /* Quote.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EECE65B270F059100E7E8D1 /* Quote.swift in Sources */,
 				0EECE649270F051D00E7E8D1 /* ContentView.swift in Sources */,
 				0EECE647270F051D00E7E8D1 /* SwiftUI_StarterApp.swift in Sources */,
 				0EECE656270F054200E7E8D1 /* APIConstants.swift in Sources */,
