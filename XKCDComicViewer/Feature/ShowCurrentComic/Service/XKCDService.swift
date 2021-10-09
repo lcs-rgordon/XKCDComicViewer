@@ -4,6 +4,7 @@
 //
 //  Created by Russell Gordon on 2021-10-07.
 //
+import SwiftUI
 
 // Define a service that goes out and gets the data from the endpoint
 protocol XKCDService {

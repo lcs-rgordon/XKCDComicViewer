@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct XKCDComicApp: App {
+struct XKCDComicViewerApp: App {
     var body: some Scene {
         WindowGroup {
             CurrentComicScreen()

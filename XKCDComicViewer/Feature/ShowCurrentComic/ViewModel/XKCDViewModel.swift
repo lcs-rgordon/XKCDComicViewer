@@ -16,7 +16,7 @@ protocol XKCDViewModel: ObservableObject {
 }
 
 @MainActor
-final class XKCDViewModelImplementation: XKCDViewModel {
+final class XKCDViewModelImplementation: XKCDViewModel, ObservableObject {
     
     @Published private(set) var comics: [XKCDComic] = []
     

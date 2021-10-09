@@ -62,8 +62,8 @@ extension XKCDComic {
                   safe_title: "TSP vs TBSP",
                   transcript: "",
                   alt: "It's like one teraspoon / when all you need is a kilonife",
-                  img: "",
-                  title: "https://imgs.xkcd.com/comics/tsp_vs_tbsp.png",
+                  img: "https://imgs.xkcd.com/comics/tsp_vs_tbsp.png",
+                  title: "TSP vs TBSP",
                   day: "8")
 
     ]

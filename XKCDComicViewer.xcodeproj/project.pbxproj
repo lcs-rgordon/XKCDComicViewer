@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EECE647270F051D00E7E8D1 /* XKCDComicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE646270F051D00E7E8D1 /* XKCDComicApp.swift */; };
+		0EECE647270F051D00E7E8D1 /* XKCDComicViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE646270F051D00E7E8D1 /* XKCDComicViewerApp.swift */; };
 		0EECE64B270F051F00E7E8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECE64A270F051F00E7E8D1 /* Assets.xcassets */; };
 		0EECE64E270F051F00E7E8D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECE64D270F051F00E7E8D1 /* Preview Assets.xcassets */; };
 		0EECE656270F054200E7E8D1 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE655270F054200E7E8D1 /* APIConstants.swift */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0EECE643270F051D00E7E8D1 /* XKCDComic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKCDComic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EECE646270F051D00E7E8D1 /* XKCDComicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XKCDComicApp.swift; sourceTree = "<group>"; };
+		0EECE643270F051D00E7E8D1 /* XKCDComicViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKCDComicViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EECE646270F051D00E7E8D1 /* XKCDComicViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XKCDComicViewerApp.swift; sourceTree = "<group>"; };
 		0EECE64A270F051F00E7E8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EECE64D270F051F00E7E8D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EECE655270F054200E7E8D1 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		0EECE63A270F051D00E7E8D1 = {
 			isa = PBXGroup;
 			children = (
-				0EECE645270F051D00E7E8D1 /* XKCDComic */,
+				0EECE645270F051D00E7E8D1 /* XKCDComicViewer */,
 				0EECE644270F051D00E7E8D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,21 +55,21 @@
 		0EECE644270F051D00E7E8D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EECE643270F051D00E7E8D1 /* XKCDComic.app */,
+				0EECE643270F051D00E7E8D1 /* XKCDComicViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0EECE645270F051D00E7E8D1 /* XKCDComic */ = {
+		0EECE645270F051D00E7E8D1 /* XKCDComicViewer */ = {
 			isa = PBXGroup;
 			children = (
 				0EECE668270F1D9200E7E8D1 /* Base */,
 				0EECE657270F057900E7E8D1 /* Feature */,
-				0EECE646270F051D00E7E8D1 /* XKCDComicApp.swift */,
+				0EECE646270F051D00E7E8D1 /* XKCDComicViewerApp.swift */,
 				0EECE64A270F051F00E7E8D1 /* Assets.xcassets */,
 				0EECE64C270F051F00E7E8D1 /* Preview Content */,
 			);
-			path = XKCDComic;
+			path = XKCDComicViewer;
 			sourceTree = "<group>";
 		};
 		0EECE64C270F051F00E7E8D1 /* Preview Content */ = {
@@ -91,12 +91,12 @@
 		0EECE657270F057900E7E8D1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				0EECE658270F058200E7E8D1 /* Comics */,
+				0EECE658270F058200E7E8D1 /* ShowCurrentComic */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		0EECE658270F058200E7E8D1 /* Comics */ = {
+		0EECE658270F058200E7E8D1 /* ShowCurrentComic */ = {
 			isa = PBXGroup;
 			children = (
 				0EECE665270F0C5E00E7E8D1 /* ViewModel */,
@@ -105,7 +105,7 @@
 				0EECE65C270F068E00E7E8D1 /* Screen */,
 				0EECE659270F058800E7E8D1 /* Model */,
 			);
-			path = Comics;
+			path = ShowCurrentComic;
 			sourceTree = "<group>";
 		};
 		0EECE659270F058800E7E8D1 /* Model */ = {
@@ -176,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0EECE642270F051D00E7E8D1 /* XKCDComic */ = {
+		0EECE642270F051D00E7E8D1 /* XKCDComicViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "XKCDComic" */;
+			buildConfigurationList = 0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "XKCDComicViewer" */;
 			buildPhases = (
 				0EECE63F270F051D00E7E8D1 /* Sources */,
 				0EECE640270F051D00E7E8D1 /* Frameworks */,
@@ -188,9 +188,9 @@
 			);
 			dependencies = (
 			);
-			name = XKCDComic;
+			name = XKCDComicViewer;
 			productName = "SwiftUI Starter";
-			productReference = 0EECE643270F051D00E7E8D1 /* XKCDComic.app */;
+			productReference = 0EECE643270F051D00E7E8D1 /* XKCDComicViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "XKCDComic" */;
+			buildConfigurationList = 0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "XKCDComicViewer" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,7 +221,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0EECE642270F051D00E7E8D1 /* XKCDComic */,
+				0EECE642270F051D00E7E8D1 /* XKCDComicViewer */,
 			);
 		};
 /* End PBXProject section */
@@ -246,7 +246,7 @@
 				0EECE65B270F059100E7E8D1 /* Quote.swift in Sources */,
 				0EECE664270F0A8F00E7E8D1 /* XKCDService.swift in Sources */,
 				0EECE661270F090C00E7E8D1 /* XKCDComicView.swift in Sources */,
-				0EECE647270F051D00E7E8D1 /* XKCDComicApp.swift in Sources */,
+				0EECE647270F051D00E7E8D1 /* XKCDComicViewerApp.swift in Sources */,
 				0EECE667270F0C6C00E7E8D1 /* XKCDViewModel.swift in Sources */,
 				0EECE656270F054200E7E8D1 /* APIConstants.swift in Sources */,
 				0EECE65E270F06A100E7E8D1 /* CurrentComicScreen.swift in Sources */,
@@ -380,7 +380,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Starter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XKCDComicViewer/Preview Content\"";
 				DEVELOPMENT_TEAM = C7DL9Y9A7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -410,7 +410,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Starter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XKCDComicViewer/Preview Content\"";
 				DEVELOPMENT_TEAM = C7DL9Y9A7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -436,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "XKCDComic" */ = {
+		0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "XKCDComicViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EECE64F270F051F00E7E8D1 /* Debug */,
@@ -445,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "XKCDComic" */ = {
+		0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "XKCDComicViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EECE652270F051F00E7E8D1 /* Debug */,
