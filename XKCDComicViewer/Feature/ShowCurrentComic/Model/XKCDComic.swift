@@ -32,7 +32,7 @@ import Foundation
  
  */
 
-// Define structure to match contents of the response
+// Define a structure to match contents of the response
 // NOTE: Property names in structure must exactly match properties in JSON object
 struct XKCDComic: Decodable {
 

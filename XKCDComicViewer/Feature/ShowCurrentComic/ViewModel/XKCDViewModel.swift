@@ -28,7 +28,10 @@ final class XKCDViewModelImplementation: XKCDViewModel, ObservableObject {
     
     func getLatestComic() async {
         do {
+            // Get the latest comic
             let newComic = try await service.fetchLatestComic()
+            
+            // Add to the list of XKCDComic objects
             comics.append(newComic)
         } catch {
             print(error)

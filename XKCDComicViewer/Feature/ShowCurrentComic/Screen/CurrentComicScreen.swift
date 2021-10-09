@@ -19,6 +19,7 @@ struct CurrentComicScreen: View {
             if vm.comics.isEmpty {
                 ProgressView()
             } else {
+                // Show the last XKCDComic instance in the list from the view model
                 XKCDComicView(comic: vm.comics.last!)
             }
         }
