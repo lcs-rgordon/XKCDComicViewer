@@ -14,6 +14,8 @@ struct XKCDComicView: View {
     var body: some View {
         VStack(alignment: .center) {
             Text(comic.title)
+            
+            AsyncImage(url: URL(string: comic.img)!)
         }
        .padding()
        .foregroundColor(.black)

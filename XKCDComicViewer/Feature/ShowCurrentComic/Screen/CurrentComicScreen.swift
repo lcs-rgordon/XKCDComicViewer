@@ -19,7 +19,7 @@ struct CurrentComicScreen: View {
             if vm.comics.isEmpty {
                 ProgressView()
             } else {
-                Text(vm.comics.last!.title)
+                XKCDComicView(comic: vm.comics.last!)
             }
         }
         .padding()
