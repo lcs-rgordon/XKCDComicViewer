@@ -1,6 +1,6 @@
 //
 //  APIConstants.swift
-//  SwiftUI Starter
+//  XKCDComic
 //
 //  Created by Russell Gordon on 2021-10-07.
 //
@@ -8,5 +8,5 @@
 import Foundation
 
 enum APIConstants {
-    static let baseURL = "https://animechan.vercel.app"
+    static let baseURL = "https://xkcd.com"
 }

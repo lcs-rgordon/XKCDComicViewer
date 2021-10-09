@@ -1,16 +1,15 @@
 //
-//  QuoteView.swift
-//  SwiftUI Starter
+//  XKCDComicView.swift
+//  XKCDComic
 //
 //  Created by Russell Gordon on 2021-10-07.
 //
 
 import SwiftUI
 
-struct QuoteView: View {
+struct XKCDComicView: View {
 
-    // Inject model into the view as a property
-    let item: Quote
+    let item: XKCDComic
     
     var body: some View {
         VStack(alignment: .leading,
@@ -44,7 +43,8 @@ struct QuoteView: View {
         
         if let range = string.range(of: label) {
             string[range].foregroundColor = .black.opacity(0.8)
-            string[range].font = .system(size: 16, weight: .bold)
+            string[range].font = .system(size: 16)
+            string[range].foregroundColor = .red
         }
         
         return string

@@ -1,6 +1,6 @@
 //
 //  LoadingView.swift
-//  SwiftUI Starter
+//  XKCDComic
 //
 //  Created by Russell Gordon on 2021-10-07.
 //
@@ -21,6 +21,6 @@ struct LoadingView: View {
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        LoadingView(text: "Fetching Quotes")
+        LoadingView(text: "Fetching latest comic")
     }
 }
